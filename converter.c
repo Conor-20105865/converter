@@ -33,8 +33,14 @@ int* binaryToDecimal(char binary [])
 }
 
 char* decimlToOctal(char decimal[])
-{
-	return 0;
+{	
+	char* octal = (char*)malloc(12);
+	if (octal == NULL){
+		printf("Memory allocation has Failed.\n");
+		exit(1);
+		}
+	sprintf(octal, "%o", decimal);
+	return octal;
 	}
 
 char* octalToDecimal(char octal[])
@@ -84,18 +90,18 @@ int main(){
 			free(result);
 			break;
 		case 2:
-			printf("");
+			printf("Enter a Binary Number: ");
 			scanf("%s", input);
 			//result
-			printf("x to y: %s\n", resultname);
-			free(result);
+			int binaryResult = binaryToDecimal(input);
+			printf("Binary to Decimmal %d\n", result);
 			break;
 		case 3:
-			printf("");
-			//may need to be changed
+			printf("Enter decimal number: ");
 			scanf("%d", &choice); 
 			//result
-			printf("x to y: %s\n", resultname);
+			result = decimalToOctal(choice);
+			printf("Decimal to Octal: %s\n", result);
 			free(result);
 			break;
 		case 4:
