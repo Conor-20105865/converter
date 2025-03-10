@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+ //input validation needed
 void stringReverse (char*);
 
 //decimal to binary
 
+// add validation for if decimal = 0
 char* decimalToBinary(int decimal)
 {
 	char* binary = (char*)malloc(33);
@@ -14,15 +15,16 @@ char* decimalToBinary(int decimal)
 	while(decimal) {
 		binary [i++] = '0' + (decimal & 1);
 		decimal >>= 1;
-		binary[i] = '\0';
+	}
+	binary[i] = '\0';
 		stringReverse(binary);
 		return binary;
-	}
+	
 }
 	
 //binary to decimal
 
-int* binaryToDecimal(char binary [])
+int binaryToDecimal(char binary [])
 {
 	int decimal = 0;
 	int length = strlen(binary);
