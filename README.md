@@ -10,13 +10,13 @@ This is a simple C program that converts numbers between different numeral syste
 
 ✅ Convert Binary to Decimal
 
-🚧 Convert Decimal to Octal (not implemented yet)
+ Convert Decimal to Octal (not implemented yet)
 
-🚧 Convert Octal to Decimal (not implemented yet)
+ Convert Octal to Decimal (not implemented yet)
 
-🚧 Convert Hexadecimal to Binary (not implemented yet)
+ Convert Hexadecimal to Binary (not implemented yet)
 
-🚧 Convert Binary to Hexadecimal (not implemented yet)
+ Convert Binary to Hexadecimal (not implemented yet)
 
 # Compilation and Execution
 
@@ -44,7 +44,7 @@ Enter Number:
 
 You can enter a choice (1-7) to select a conversion type. The program will then prompt you to input a number for conversion and display the result.
 
-# Known Issues 🛠️
+# Known Issues 
 
 Several functions are placeholders and need to be implemented.
 
